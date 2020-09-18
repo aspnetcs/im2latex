@@ -1,0 +1,17 @@
+https://blog.csdn.net/qq_38248958/article/details/81416800
+ubuntu sudo pip command not found,pip update
+
+qq_38248958 2018-08-04 23:36:26   1901   收藏 1
+分类专栏： ubuntu 文章标签： ubuntu pip3 pip
+版权
+python2
+
+sudo apt-get install python-pip
+1
+python3
+
+sudo apt-get install python3-pip
+1
+pip update
+
+pip install --upgrade pip
