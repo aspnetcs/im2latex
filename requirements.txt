@@ -5,6 +5,6 @@ nltk
 pillow
 distance
 logging
-multiprocessing
+multiprocess
 six
 click
