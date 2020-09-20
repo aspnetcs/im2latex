@@ -1,0 +1,25 @@
+pip3 install multiprocess
+pip install multiprocess
+https://blog.csdn.net/weixin_44792487/article/details/95984617
+python中 multiprocessing模块安装
+
+追梦~路上 2019-07-15 16:45:51  4535  收藏 2
+版权
+python中 multiprocessing模块安装
+安装Python多线程包multiprocessing安装报错
+
+本机环境：
+win7 X64
+Python 3.7.0
+
+CMD直接安装multiprocessing报错如下：
+在这里插入图片描述
+正确安装语句：pip3 install multiprocess：
+在这里插入图片描述
+然后进入python进行检测，检测结果类似下图，即表示multiprocessing安装完成：
+在这里插入图片描述
+
+作者：追梦~路上
+来源：CSDN
+原文：https://blog.csdn.net/weixin_44792487
+版权声明：本文为博主原创文章，转载请附上博文链接！
