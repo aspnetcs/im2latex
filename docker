@@ -1,4 +1,4 @@
 docker pull aspnetcs88/dlp:im2latexv1.4
-cd /home/me/img2latex
+cd /home/me/im2latex-master/
 make build
 make train
