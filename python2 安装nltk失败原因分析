@@ -1,0 +1,7 @@
+https://blog.csdn.net/qfikh/article/details/100881218?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~all~first_rank_v2~rank_v25-3-100881218.nonecase&utm_term=nltk%20regex%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5
+pip install --user --upgrade setuptools
+install后加–user显示更新成功
+
+sudo pip install nltk
+显示安装成功
+
