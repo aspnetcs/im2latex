@@ -1,0 +1,35 @@
+https://blog.csdn.net/hanchaobiao/article/details/84069299
+https://zhuanlan.zhihu.com/p/52827335
+
+2. 配置SSH服务
+接着我们在刚刚新建的容器里配置SSH服务，首先安装openssh-server:
+
+$ apt update
+$ apt install -y openssh-server
+然后建立一个配置文件夹并进行必要的配置：
+
+$ mkdir /var/run/sshd
+$ echo 'root:passwd' | chpasswd
+# 这里使用你自己想设置的用户名和密码，但是一定要记住！
+$ sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+$ sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
+$ echo "export VISIBLE=now" >> /etc/profile
+3、修改SSH配置文件以下选项
+
+vim /etc/ssh/sshd_config
+
+
+# PermitRootLogin prohibit-password # 默认打开 禁止root用户使用密码登陆，需要将其注释
+RSAAuthentication yes #启用 RSA 认证
+PubkeyAuthentication yes #启用公钥私钥配对认证方式
+PermitRootLogin yes #允许root用户使用ssh登录
+#
+4、启动sshd服务
+
+/etc/init.d/ssh restart
+
+ 5、退出容器，连接测试
+
+ssh root@172.17.0.2 -p 22
+
+输入密码成功进入容器内部即配置成功
